@@ -1,12 +1,60 @@
 /**
  * Nancy Wheeler.
  */
+
+@font-face {
+    font-family: 'MeriendaOne';
+    src: url('../fonts/MeriendaOne-Regular.ttf');
+    src: url('../fonts/MeriendaOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Julee-Regular';
+    src: url('../fonts/Julee-Regular.ttf');
+    src: url('../fonts/Julee-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rochester-Regular';
+    src: url('../fonts/Rochester-Regular.ttf');
+    src: url('../fonts/Rochester-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Alice-Regular';
+    src: url('../fonts/Alice-Regular.ttf');
+    src: url('../fonts/Alice-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fonts/Lobster.ttf');
+    src: url('../fonts/Lobster.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'League-Gothic';
+    src: url('../fonts/League-Gothic.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+ 
 .california {
 	background-color: #03658C;
 	color: #022E40;
 }
 .california h1 {
+	font-family: 'MeriendaOne', Arial, sans-serif;
 	color: #F2B705;
+	font-size: 60px;
+    font-weight: 500;
+    line-height: 1;
 }
 .california h2 {
 	color: #F28705;
@@ -23,7 +71,11 @@
 	color: #BFBB11;
 }
 .beetle-bus-goes-jamba-juice h1 {
+	font-family: 'Julee-Regular', Arial, sans-serif;
 	color: #FFC200;
+	font-size: 60px;
+    font-weight: 500;
+    line-height: 1;
 }
 .beetle-bus-goes-jamba-juice h2 {
 	color: #E88801;
@@ -40,7 +92,11 @@
 	color: #009393;
 }
 .code-azur h1 {
+	font-family: 'Rochester-Regular', Arial, sans-serif;
 	color: #FFFCC4;
+	font-size: 60px;
+    font-weight: 500;
+    line-height: 1;
 }
 .code-azur h2 {
 	color: #F0EDBB;
@@ -57,7 +113,11 @@
 	color: #8AB29F;
 }
 .retro-package h1 {
+	font-family: 'Alice-Regular', Arial, sans-serif;
 	color: #606362;
+	font-size: 60px;
+    font-weight: 500;
+    line-height: 1;
 }
 .retro-package h2 {
 	color: #593325;
@@ -74,7 +134,11 @@
 	color: #A7BD5B;
 }
 .refreshing-melon h1 {
+	font-family: 'Lobster', Arial, sans-serif;
 	color: #DC574E;
+	font-size: 60px;
+    font-weight: 500;
+    line-height: 1;
 }
 .refreshing-melon h2 {
 	color: #8DC7B8;
@@ -91,7 +155,13 @@
 	color: #3F4343;
 }
 .veerle-stone-caseli h1 {
-	color: #CAD3A1;
+	font-family: 'League-Gothic', Arial, sans-serif;
+	font-size: 150px;
+    line-height: .81em;
+    color: #0C0C0C;
+    color: rgba(0,0,0,.95);
+    text-shadow: 2px 2px 1px rgb(255, 255, 255), 4px 4px 0 rgb(187, 187, 187);
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 1), 4px 4px 0 rgba(187, 187, 187, .8);
 }
 .veerle-stone-caseli h2 {
 	color: #F4F9EB;
