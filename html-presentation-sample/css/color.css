@@ -76,7 +76,27 @@
 .greek h3 {
 	color: #1D1D1F;
 }
- 
+
+.winter-road {
+	background-color: #181D26;
+	color: #BFBD9F;
+}
+
+.winter-road h1 {
+	color: #F1F2D8;
+	font-size: 60px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.winter-road h2 {
+	color: #778C7A;
+}
+
+.winter-road h3 {
+	color: #425955;
+}
+
 .california {
 	background-color: #03658C;
 	color: #022E40;
@@ -233,32 +253,61 @@
 }
 
 /**
- * Xizzzy
+ * Dinster-ran
  */
-.sea-wolf {
-	background-color: #DC3522;
-	color: #D9CB9E;
-}
-.sea-wolf h1 {
-	color: #374140;
-}
-.sea-wolf h2 {
-	color: #2A2C2B;
-}
-.sea-wolf h3 {
-	color: #1E1E20;
+.harmony {
+	background-color: #F2CC85;
+	color: #SD878C;
 }
 
+.harmony h1 {
+	color: #164659;
+}
 
+.harmony h2 {
+	color: #011826;
+}
 
+.harmony h3 {
+	color: #06141C;
+}
 
+/**
+ * Sadie Beth
+ */
+.contemporary {
+	background-color: #D2D5D9;
+	color: #9FA2A6;
+}
 
+.contemporary h1 {
+	color: #262626;
+}
 
+.contemporary h2 {
+	color: #404040;
+}
 
+.contemporary h3 {
+	color: #6F736E;
+}
 
+.blue-sky {
+	background-color: #ADD5F7;
+	color: #16193B;
+}
 
+.blue-sky h1 {
+	color: #35478C;
+}
 
+.blue-sky h2 {
+	color: #4E7AC7;
+}
 
+.blue-sky h3 {
+	color: #7FB2F0;
+}
 
 
 
