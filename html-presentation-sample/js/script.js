@@ -61,29 +61,7 @@ $(document).ready(function() {
 		}
 		return false; //cancel the link
 	});
-	
-	//gallery
-	var img1 = new Image();
-	img1.src = "http://www.webdesignerwall.com/demo/jquery/images/img2-lg.jpg";
-	img1.src = "http://www.webdesignerwall.com/demo/jquery/images/img3-lg.jpg";
-	img1.src = "http://www.webdesignerwall.com/demo/jquery/images/img4-lg.jpg";
-	img1.src = "http://www.webdesignerwall.com/demo/jquery/images/img5-lg.jpg";
-	$(".thumbs a").click(function(){
-		var largePath = $(this).attr("href");
-		var largeAlt = $(this).attr("title");
-		$("#largeImg").attr({ src: largePath, alt: largeAlt });
-		return false;
-	});
-	
-	//thumbs fade in / fade out
-	$(".thumbs img").css("opacity", "0.5");
-	
-	$(".thumbs img").hover(function(){
-		$(this).animate({"opacity": "1"}, "fast");
-	}, function(){
-		$(this).animate({"opacity": "0.5"}, "slow");
-	});
-	
+		
 	//keyboard navigation
 	$(document).bind('keydown',function(e) {
 		switch(e.keyCode) {

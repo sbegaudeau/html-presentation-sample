@@ -34,9 +34,41 @@ h1 {
 	top: 50%;
 	margin-top: -290px
 }
+
+.winter-road .page-top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 10%;
+	background-color: #778C7A;
+	padding: 0;
+	margin: 0;
+}
+
+.winter-road .pagebody {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	width: 100%;
+	height: 80%;
+	padding: 0;
+	margin: 0;
+}
+
+.winter-road .page-bottom {
+	position: absolute;
+	top: 90%;
+	width: 100%;
+	height: 10%;
+	background-color: #778C7A;
+	padding: 0;
+	margin: 0;
+}
+
 .page1 {
 	
 }
+
 #share {
 	position: absolute;
 	background-color: #abc;
@@ -44,10 +76,12 @@ h1 {
 	left: -250px;
 	width: 250px;
 	height: 90px;
+	z-index: 2;
 }
 #button-share {
 	position: absolute;
 	top: 400px;
+	z-index: 3;
 }
 .twitter-share-button {
 	margin-top: 15px;
@@ -104,6 +138,9 @@ h1 {
 .page3 {
 	
 }
+
 .page4 {
 	
 }
+
+
