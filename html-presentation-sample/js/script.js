@@ -135,45 +135,45 @@ $(document).ready(function() {
 			//scrolling to page 2
 			$("#back-to-top").css({"left": "0", "top": "0"});
 			$("#acceleo-logo").css({"-webkit-transform" : "rotate(-58deg)", "-webkit-transition-duration": "2s"});
-		} else if (top > windowHeight && top < 2 * windowHeight) {
+		} else if (top > 1.8 * windowHeight && top < 2 * windowHeight) {
 			//scrolling to page 3
 			$("#back-to-top").css({"left": "50", "top": "0"});
-		} else if (top > 2 * windowHeight && top < 3 * windowHeight) {
+		} else if (top > 2.8 * windowHeight && top < 3 * windowHeight) {
 			//scrolling to page 4
 			$("#back-to-top").css({"left": "50", "top": "200"});
-		} else if (top > 3 * windowHeight && top < 4 * windowHeight) {
+		} else if (top > 3.8 * windowHeight && top < 4 * windowHeight) {
 			//scrolling to page 5
-		} else if (top > 4 * windowHeight && top < 5 * windowHeight) {
+		} else if (top > 4.8 * windowHeight && top < 5 * windowHeight) {
 			//scrolling to page 6
-		} else if (top > 5 * windowHeight && top < 6 * windowHeight) {
+		} else if (top > 5.8 * windowHeight && top < 6 * windowHeight) {
 			//scrolling to page 7
-		} else if (top > 6 * windowHeight && top < 7 * windowHeight) {
+		} else if (top > 6.8 * windowHeight && top < 7 * windowHeight) {
 			//scrolling to page 8
-		} else if (top > 7 * windowHeight && top < 8 * windowHeight) {
+		} else if (top > 7.8 * windowHeight && top < 8 * windowHeight) {
 			//scrolling to page 9
-		} else if (top > 8 * windowHeight && top < 9 * windowHeight) {
+		} else if (top > 8.8 * windowHeight && top < 9 * windowHeight) {
 			//scrolling to page 10
-		} else if (top > 9 * windowHeight && top < 10 * windowHeight) {
+		} else if (top > 9.8 * windowHeight && top < 10 * windowHeight) {
 			//scrolling to page 11
-		} else if (top > 10 * windowHeight && top < 11 * windowHeight) {
+		} else if (top > 10.8 * windowHeight && top < 11 * windowHeight) {
 			//scrolling to page 12
-		} else if (top > 11 * windowHeight && top < 12 * windowHeight) {
+		} else if (top > 11.8 * windowHeight && top < 12 * windowHeight) {
 			//scrolling to page 13
-		} else if (top > 12 * windowHeight && top < 13 * windowHeight) {
+		} else if (top > 12.8 * windowHeight && top < 13 * windowHeight) {
 			//scrolling to page 14
-		} else if (top > 13 * windowHeight && top < 14 * windowHeight) {
+		} else if (top > 13.8 * windowHeight && top < 14 * windowHeight) {
 			//scrolling to page 15
-		} else if (top > 14 * windowHeight && top < 15 * windowHeight) {
+		} else if (top > 14.8 * windowHeight && top < 15 * windowHeight) {
 			//scrolling to page 16
-		} else if (top > 15 * windowHeight && top < 16 * windowHeight) {
+		} else if (top > 15.8 * windowHeight && top < 16 * windowHeight) {
 			//scrolling to page 17
-		} else if (top > 16 * windowHeight && top < 17 * windowHeight) {
+		} else if (top > 16.8 * windowHeight && top < 17 * windowHeight) {
 			//scrolling to page 18
-		} else if (top > 17 * windowHeight && top < 18 * windowHeight) {
+		} else if (top > 17.8 * windowHeight && top < 18 * windowHeight) {
 			//scrolling to page 19
-		} else if (top > 18 * windowHeight && top < 19 * windowHeight) {
+		} else if (top > 18.8 * windowHeight && top < 19 * windowHeight) {
 			//scrolling to page 20
-		} else if (top > 19 * windowHeight && top < 20 * windowHeight) {
+		} else if (top > 19.8 * windowHeight && top < 20 * windowHeight) {
 			//scrolling to page 21
 		}
 	});
