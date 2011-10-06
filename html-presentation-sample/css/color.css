@@ -43,7 +43,39 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'DroidSans';
+    src: url('../fonts/DroidSans.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
+.greek {
+	background-color: #F2E6CE;
+	color: #8AB29F;
+}
+.greek h1 {
+	font: bold 10em 'Droid Sans', sans-serif;
+	-webkit-text-stroke: 0;
+	color: transparent;
+	-webkit-background-clip: text;
+	background-color: rgba(82,96,117,0.5);
+	text-shadow: rgba(255,255,255,0.5) 0 5px 6px, rgba(255,255,255,0.2) 1px 3px 3px;
+	-webkit-transition: text-shadow .1s ease-out,
+						background-color .2s ease-out;
+	margin-bottom: 0px;
+}
+.greek h2 {
+	font-family: 'Alice-Regular', Arial, sans-serif;
+	color: #606362;
+	font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
+    text-align:center;
+}
+.greek h3 {
+	color: #1D1D1F;
+}
  
 .california {
 	background-color: #03658C;
@@ -61,27 +93,6 @@
 }
 .california h3 {
 	color: #F25C05;
-}
-
-/**
- * Diane Steinberg.
- */
-.beetle-bus-goes-jamba-juice {
-	background-color: #730046;
-	color: #BFBB11;
-}
-.beetle-bus-goes-jamba-juice h1 {
-	font-family: 'Julee-Regular', Arial, sans-serif;
-	color: #FFC200;
-	font-size: 60px;
-    font-weight: 500;
-    line-height: 1;
-}
-.beetle-bus-goes-jamba-juice h2 {
-	color: #E88801;
-}
-.beetle-bus-goes-jamba-juice h3 {
-	color: #C93C00;
 }
 
 /**

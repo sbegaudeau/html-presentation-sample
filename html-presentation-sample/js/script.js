@@ -62,17 +62,6 @@ $(document).ready(function() {
 		return false; //cancel the link
 	});
 	
-	//animation
-	$("#animation-launcher").click(function(){
-		$("#animation-div").animate({"left": "+=500px", "opacity": "0.1", "height": "-=150px", "width": "-=150px"}, "fast")
-							.animate({"top": "-=500px", "opacity": "1", "height": "+=150px", "width": "+=150px"}, "fast")
-							.animate({"left": "-=500px", "opacity": "0.1", "height": "-=150px", "width": "-=150px"}, "fast")
-							.animate({"top": "+=500px", "opacity": "1", "height": "+=150px", "width": "+=150px"}, "fast")
-							.slideUp()
-							.slideDown("slow");
-		return false;
-	});
-	
 	//gallery
 	var img1 = new Image();
 	img1.src = "http://www.webdesignerwall.com/demo/jquery/images/img2-lg.jpg";
@@ -93,41 +82,6 @@ $(document).ready(function() {
 		$(this).animate({"opacity": "1"}, "fast");
 	}, function(){
 		$(this).animate({"opacity": "0.5"}, "slow");
-	});
-	
-	//back to top
-	$("#back-to-top").click(function(){
-		if ($('.page.selected').index() > 0) {
-			$('.page').removeClass("selected");
-			$('.page1').addClass("selected");
-			jQuery.scrollTo.window().queue([]).stop();
-			$(window).scrollTo($(".page1"),1200,{easing:'easeOutQuint'});
-			return false; //cancel the link
-		}
-	});
-	
-	//popup
-	$(".has-popup").hover(function(){
-		function trimPX(css_property) {
-			if (css_property.toString().endsWith("px")) {
-				css_property = Number(css_property.toString().substring(0, css_property.toString().length - 2));
-			}
-			return css_property;
-		}
-	
-		var that = $(this);
-		var top_value = trimPX(that.css("top"));
-		top_value -= trimPX($("#popup").css("height"));
-		top_value -= 50;
-		
-		var left_value = trimPX(that.css("left"));
-		left_value += (trimPX(that.css("width")) / 2);
-		left_value -= (trimPX($("#popup").width()) / 2);
-		
-		$("#popup").animate({"top": top_value, "left": left_value})
-					.animate({"opacity": "show", "top": "+=20"});
-	}, function(){
-		$("#popup").animate({"opacity": "hide", "top": "-=20"});
 	});
 	
 	//keyboard navigation
