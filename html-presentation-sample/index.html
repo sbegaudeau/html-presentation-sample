@@ -43,26 +43,28 @@
 				<p>
 					<h1>ACCELEO</h1>
 					<h2>And you thought you knew template based code generation?</h2>
+					<hr style="width: 70%;"/>
+					<h2>by St&eacute;phane B&eacute;gaudeau (Obeo)</h2>
 				</p>
 				
 			</div>
-			
-			<div id="back-to-top"><a href="#">Back to top</a></div>
 		</div>
 
 		<div class="page page2 winter-road">
 			<div class="page-top">
 			</div>
 			<div class="pagebody">
-				<p>
-					<h1>Planning of the talk</h1>
-					<ul>
-						<li>Presentation of the Acceleo project</li>
-						<li>From a prototype to a full fledged generator</li>
-						<li>Working with existing generators</li>
-						<li>The traceability of the generated code</li>
-					</ul>
-				</p>
+				<div class="acceleo-planning">
+					<p>
+						<h1>Planning of the talk</h1>
+						<ul>
+							<li>Presentation of the Acceleo project</li>
+							<li>From a prototype to a full fledged generator</li>
+							<li>Working with existing generators</li>
+							<li>The traceability of the generated code</li>
+						</ul>
+					</p>
+				</div>
 			</div>
 			<div class="page-bottom">
 			</div>
@@ -73,11 +75,12 @@
 			</div>
 			<div class="pagebody">
 				<div class="acceleo-presentation">
-					<h1>
-						Acceleo is an open source code generator implementing the OMG's MOFM2T standard that uses any kind
-						of EMF based models (UML, SysML, DSM, etc.) to generate any kind of textual language (Java, Scala, DSL, etc.)
-						while keeping the traceability of the generated text.
-					</h1>
+					<h1>Acceleo</h1>
+					<h2>
+						Acceleo is an open source code generator implementing the OMG's MOFM2T standard that uses <bold>any kind
+						of EMF based models</bold> (UML, SysML, DSM, etc.) to generate <bold>any kind of textual languages</bold> (Java, Scala, DSL, etc.)
+						while keeping the <bold>traceability</bold> of the generated text.
+					</h2>
 				</div>
 			</div>
 			<div class="page-bottom">
@@ -88,15 +91,16 @@
 			<div class="page-top">
 			</div>
 			<div class="pagebody">
-				<h1>The history of the Acceleo project</h1>
 				<div class="acceleo-history">
+					<h1>The history of the Acceleo project</h1>
 					<p>
 						<ul>
-							<li>2005 Birth of Acceleo</li>
-							<li>2006 Acceleo 1.0</li>
-							<li>2008 Entrance in the Eclipse Foundation</li>
-							<li>2010 Acceleo 3.0 in the release train</li>
-							<li>2011 Acceleo 3.1 released with Indigo</li>
+							<li>06/2005 Birth of Acceleo</li>
+							<li>01/2006 Acceleo 1.0</li>
+							<li>02/2008 Entrance in the Eclipse Foundation</li>
+							<li>06/2010 Acceleo 3.0 in the release train</li>
+							<li>06/2011 Acceleo 3.1 released with Indigo</li>
+							<li>Last month Acceleo 3.2</li>
 						</ul>
 					</p>
 				</div>
@@ -120,13 +124,13 @@
 			<div class="page-top">
 			</div>
 			<div class="pagebody">
-				<h1>Structure of an Acceleo generator</h1>
-				<p>
-					Eclipse plugin project
-					Acceleo module
-					Templates
-					Queries
-				</p>
+				<div class="gallery">
+				</div>
+				<div class="gallery-description">
+					<p class="to-hide img1">The module declaration</p>
+					<p class="to-hide img2">The template declaration</p>
+					<p class="to-hide img3">The query declaration</p>
+				</div>
 			</div>
 			<div class="page-bottom">
 			</div>
@@ -136,10 +140,13 @@
 			<div class="page-top">
 			</div>
 			<div class="pagebody">
-				<h1>The entry point of the generation</h1>
-				<p>
-					Acceleo module with a @main annotation to generate the Java launcher.
-				</p>
+				<div class="acceleo-main">
+					<h1>The entry point of the generation</h1>
+					<p>
+						Acceleo module with a @main comment to generate the Java launcher.
+						Java launcher can be used out of Eclipse to launch the generation.
+					</p>
+				</div>
 			</div>
 			<div class="page-bottom">
 			</div>
@@ -149,10 +156,12 @@
 			<div class="page-top">
 			</div>
 			<div class="pagebody">
-				<h1>Launching an Acceleo generator</h1>
-				<p>
-					Run configuration
-				</p>
+				<div class="acceleo-run">
+					<h1>Launching an Acceleo generator</h1>
+					<p>
+						Integrated in Eclipse Run configuration mechanism.
+					</p>
+				</div>
 			</div>
 			<div class="page-bottom">
 			</div>
@@ -168,10 +177,12 @@
 			<div class="page-top">
 			</div>
 			<div class="pagebody">
-				<h1>Initialize an Acceleo project with a prototype</h1>
-				<p>
-					Start with a small working prototype to initialize a new Acceleo project
-				</p>
+				<div class="acceleo-prototype">
+					<h1>Initialize an Acceleo project with a prototype</h1>
+					<p>
+						Start with a small working prototype to initialize a new Acceleo project
+					</p>
+				</div>
 			</div>
 			<div class="page-bottom">
 			</div>
@@ -181,10 +192,16 @@
 			<div class="page-top">
 			</div>
 			<div class="pagebody">
-				<h1>The Acceleo tooling (editor and refactoring)</h1>
-				<p>
-					Acceleo it's, an editor with syntax highlighting, code completion, refactoring and more...
-				</p>
+				<div class="gallery">
+				</div>
+				<div class="gallery-description">
+					<p class="to-hide img1">Improving the generator: Code Completion</p>
+					<p class="to-hide img2">Improving the generator: Errors, Warnings and Quick fixes</p>
+					<p class="to-hide img3">Improving the generator: Quick replacement</p>
+					<p class="to-hide img4">Improving the generator: As For/If</p>
+					<p class="to-hide img5">Improving the generator: Polymophic Dispatch</p>
+					<p class="to-hide img6">Improving the generator: The profiler</p>
+				</div>
 			</div>
 			<div class="page-bottom">
 			</div>
@@ -194,156 +211,251 @@
 			<div class="page-top">
 			</div>
 			<div class="pagebody">
-				<h1>The Acceleo tooling</h1>
-				<p>
-					A profiler, a dedicated perspective with its views
-				</p>
+				<div class="gallery">
+				</div>
+				<div class="gallery-description">
+					<p class="to-hide img1">Improving the generator: The Outline view</p>
+					<p class="to-hide img2">The Acceleo Perspective: The Generation Pattern view</p>
+					<p class="to-hide img3">The Acceleo Perspective: The Overrides view</p>
+					<p class="to-hide img4">Improving the generator: The Result view</p>
+				</div>
 			</div>
 			<div class="page-bottom">
 			</div>
 		</div>
 		
 		<div class="page page13 contemporary-presentation">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>The debugger and the interpreter</h1>
-				<p>
-					The debugger and the interpreter
-				</p>
+				<div class="acceleo-debugger-interpreter">
+					<h1>The debugger and the interpreter</h1>
+					<video src="videos/page13/Acceleo Interpreter.mp4" width="60%" id="interpreter-video"/>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
-		<div class="page page14 contemporary-presentation">
+		<div class="page page14 winter-road">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>Generating an Eclipse UI for your generator</h1>
-				<p>
-					Generate a new UI for your generator in a few clicks.
-				</p>
+				<div class="acceleo-ui-plugin">
+					<h1>Generating an Eclipse UI for your generator</h1>
+					<p>
+						Generate a new UI for your generator in a few clicks.
+					</p>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
-		<div class="page page15 winter-road">
+		<div class="page page15 contemporary-presentation">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>Build and deploy with PDE, Ant or Maven</h1>
-				<p>
-					Maven and Ant based build
-				</p>
+				<div class="acceleo-deploy">
+					<h1>Build and deploy with PDE, Ant or Maven</h1>
+					<p>
+						Maven and Ant based build
+					</p>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
-		<div class="page page16 contemporary-presentation">
+		<div class="page page16 winter-road">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>Manage changes in your generated code</h1>
-				<p>
-					Protected areas and JMerge.
-				</p>
+				<div class="acceleo-manage">
+					<h1>Manage changes in your generated code</h1>
+					<p>
+						Protected areas and JMerge.
+					</p>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
-		<div class="page page17 winter-road">
+		<div class="page page17 contemporary-presentation">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>Work with existing generators</h1>
-				<p>
-					Overriding
-				</p>
+				<div class="acceleo-maintain">
+					<h1>Work with existing generators</h1>
+					<p>
+						Overriding
+					</p>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
-		<div class="page page18 contemporary-presentation">
+		<div class="page page18 winter-road">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>Stand alone</h1>
-				<p>
-					Acceleo from Netbeans :)
-				</p>
+				<div class="acceleo-netbeans">
+					<h1>Stand alone</h1>
+					<p>
+						Acceleo from Netbeans :)
+					</p>
+					<h1>Out of Eclipse enough for you?</h1>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
 		<div class="page page19 contemporary-presentation">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>Traceability of the generated code</h1>
-				<p>
-					The result view
-				</p>
+				<div class="acceleo-traceability">
+					<h1>Traceability of the generated code</h1>
+					<p>
+						The result view
+					</p>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
 		<div class="page page20 greek">
 			<div class="pagebody">
 				<h1>Acceleo Premium</h1>
-				<h2>Support and advanced traceability</h2>
+				<h2>Professional support and advanced traceability</h2>
 			</div>
 		</div>
 		
 		<div class="page page21 contemporary-presentation">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>Obeo Traceability (open input, open generator)</h1>
-				<p>
-					Find out where every part of your generated code is coming from
-				</p>
+				<div class="traceability-open">
+					<h1>Obeo Traceability (open input, open generator)</h1>
+					<p>
+						Find out where every part of your generated code is coming from
+					</p>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
 		<div class="page page22 winter-road">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>Obeo Traceability (real time synchronization)</h1>
-				<p>
-					Awesomeness at your fingertips
-				</p>
+				<div class="traceability-real-time">
+					<h1>Obeo Traceability (real time synchronization)</h1>
+					<p>
+						Awesomeness at your fingertips
+					</p>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
 		<div class="page page23 contemporary-presentation">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>Obeo Traceability (preview and refresh)</h1>
-				<p>
-					Incremental generation
-				</p>
+				<div class="traceability-incremental">
+					<h1>Obeo Traceability (preview and refresh)</h1>
+					<p>
+						Incremental generation
+					</p>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
 		<div class="page page24 winter-road">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>Obeo Traceability (user code management)</h1>
+				<div class="traceability-user-code">
+					<h1>Obeo Traceability (user code management)</h1>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
 		<div class="page page25 contemporary-presentation">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>Obeo Traceability (the traceability perspective)</h1>
+				<div class="traceability-perspective">
+					<h1>Obeo Traceability (the traceability perspective)</h1>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
 		<div class="page page26 winter-road">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>Unit Testing framework</h1>
-				<p>
-					Easily test your generators with a JUnit based testing framework
-				</p>
+				<div class="traceability-unit-testing">
+					<h1>Unit Testing framework</h1>
+					<p>
+						Easily test your generators with a JUnit based testing framework
+					</p>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
 		<div class="page page27 contemporary-presentation">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>Professional support</h1>
-				<p>Acceleo Premium for Acceleo 3.1 and 3.2</p>
-				<p>Long Term Support for Acceleo 3.x</p>
+				<div class="traceability-support">
+					<h1>Professional support</h1>
+					<p>Acceleo Premium for Acceleo 3.1 and 3.2</p>
+					<p>Long Term Support for Acceleo 3.x</p>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
-		<div class="page page28 contemporary-presentation">
+		<div class="page page28 winter-road">
+			<div class="page-top">
+			</div>
 			<div class="pagebody">
-				<h1>One more thing</h1>
-				<p>
-					Acceleo 3.2 will not be release with Eclipse Juno
-				</p>
+				<div class="acceleo-3-2">
+					<h1>One more thing</h1>
+					<p>
+						Acceleo 3.2 will not be release with Eclipse Juno
+					</p>
+				</div>
+			</div>
+			<div class="page-bottom">
 			</div>
 		</div>
 		
 		<div class="page page29 greek">
 			<div class="pagebody">
 				<h1>The end</h1>
-				<p>
-					
-				</p>
+				<h2>Acceleo: http://www.eclipse.org/acceleo</h2>
+				<h2>Documentation: http://docs.obeonetwork.com/acceleo</h2>
+				<hr style="width: 70%;"/>
+				<h2>Twitter: @sbegaudeau & @acceleo</h2>
+				<h2>Google+: http://www.google.com/profiles/stephane.begaudeau</h2>
 			</div>
 		</div>
 	</body>

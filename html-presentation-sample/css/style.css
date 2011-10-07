@@ -16,10 +16,6 @@ body {
 h1 {
 	font-family: 'Lora', serif;
 }
-#back-to-top {
-	position: fixed;
-	z-index: 2;
-}
 .page {
 	position: relative;
 	width: 100%;
@@ -33,6 +29,13 @@ h1 {
 	margin-left: -400px;
 	top: 50%;
 	margin-top: -290px
+}
+
+.greek .pagebody {
+	width: 100%;
+	left: 0;
+	top: 20%;
+	margin: auto;
 }
 
 .winter-road .page-top {
@@ -63,6 +66,65 @@ h1 {
 	background-color: #778C7A;
 	padding: 0;
 	margin: 0;
+}
+
+.contemporary-presentation .page-top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 10%;
+	background-color: #6F736E;
+	padding: 0;
+	margin: 0;
+}
+
+.contemporary-presentation .pagebody {
+	position: absolute;
+	top: 10%;
+	left: 0;
+	width: 100%;
+	height: 80%;
+	padding: 0;
+	margin: 0;
+}
+
+.contemporary-presentation .page-bottom {
+	position: absolute;
+	top: 90%;
+	width: 100%;
+	height: 10%;
+	background-color: #6F736E;
+	padding: 0;
+	margin: 0;
+}
+
+.gallery {
+	position: absolute;
+	width: 80%;
+	height: 100%;
+	margin-left: 10%;
+	background-color: grey;
+}
+
+.gallery-description {
+	position: absolute;
+	top: 90%;
+	height: 10%;
+	width: 80%;
+	margin-left: 10%;
+	background-color: #444;
+	color: #EEE;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	opacity: 0.9;
+	z-index: 4;
+}
+
+.gallery-description p {
+	font-size: 1.6em;
+	vertical-align: text-bottom;
+	margin: 0;
+	padding: 10px;
 }
 
 .page1 {
@@ -132,15 +194,153 @@ h1 {
 	height: 50px;
 	background-color: #555555;
 }
-.page2 {
-	
+
+.page2 .acceleo-planning {
+	margin: 40px;
 }
+
+.page2 li {
+	font-size: 40px;
+}
+
+.page3 .acceleo-presentation {
+	margin: 40px;
+}
+
 .page3 {
 	
 }
 
-.page4 {
+.page4 .acceleo-history {
+	margin: 40px;
+}
+.page4 li {
+	font-size: 40px;
+}
+
+.page5 {
 	
 }
+
+.page6 .gallery-page6-img1 {
+	background-image: url('../images/page6/module.png');
+}
+.page6 .gallery-page6-img2 {
+	background-image: url('../images/page6/template.png');
+}
+.page6 .gallery-page6-img3 {
+	background-image: url('../images/page6/module.png');
+}
+
+.page7 .acceleo-main {
+	margin: 40px;
+}
+
+.page8 .acceleo-run {
+	margin: 40px;
+}
+
+.page10 .acceleo-prototype {
+	margin: 40px;
+}
+
+.page11 .gallery-page11-img1 {
+	background-image: url('../images/page6/module.png');
+}
+.page11 .gallery-page11-img2 {
+	background-image: url('../images/page6/module.png');
+}
+.page11 .gallery-page11-img3 {
+	background-image: url('../images/page6/module.png');
+}
+.page11 .gallery-page11-img4 {
+	background-image: url('../images/page6/module.png');
+}
+.page11 .gallery-page11-img5 {
+	background-image: url('../images/page6/module.png');
+}
+.page11 .gallery-page11-img6 {
+	background-image: url('../images/page6/module.png');
+}
+
+.page12 .gallery-page12-img1 {
+	background-image: url('../images/page6/module.png');
+}
+.page12 .gallery-page12-img2 {
+	background-image: url('../images/page6/template.png');
+}
+.page12 .gallery-page12-img3 {
+	background-image: url('../images/page6/module.png');
+}
+
+.page13 .acceleo-debugger-interpreter {
+	margin: 40px;
+}
+
+#interpreter-video {
+	position: absolute;
+	left: 20%;
+	border: 2px solid #666;
+}
+
+.page14 .acceleo-ui-plugin {
+	margin: 40px;
+}
+
+.page15 .acceleo-deploy {
+	margin: 40px;
+}
+
+.page16 .acceleo-manage {
+	margin: 40px;
+}
+
+.page17 .acceleo-maintain {
+	margin: 40px;
+}
+
+.page18 .acceleo-netbeans {
+	margin: 40px;
+}
+
+.page19 .acceleo-traceability {
+	margin: 40px;
+}
+
+.page21 .traceability-open {
+	margin: 40px;
+}
+
+.page22 .traceability-real-time {
+	margin: 40px;
+}
+
+.page23 .traceability-incremental {
+	margin: 40px;
+}
+
+.page24 .traceability-user-code {
+	margin: 40px;
+}
+
+.page25 .traceability-perspective {
+	margin: 40px;
+}
+
+.page26 .traceability-unit-testing {
+	margin: 40px;
+}
+
+.page27 .traceability-support {
+	margin: 40px;
+}
+
+.page28 .acceleo-3-2 {
+	margin: 40px;
+}
+
+
+
+
 
 
