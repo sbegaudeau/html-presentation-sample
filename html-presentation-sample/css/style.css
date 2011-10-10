@@ -311,8 +311,16 @@ h1 {
 	margin: 40px;
 }
 
+.page14 .gallery-page14-img1 {
+	background-image: url('../images/page14/ui-project-1.png');
+}
+
 .page15 .acceleo-deploy {
 	margin: 40px;
+}
+
+.page15 .gallery-page15-img1 {
+	background-image: url('../images/page15/maven-build.png');
 }
 
 .page16 .acceleo-manage {
