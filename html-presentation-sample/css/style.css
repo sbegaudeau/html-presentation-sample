@@ -232,35 +232,55 @@ h1 {
 	background-image: url('../images/page6/query.png');
 }
 
+.page-top {
+	opacity: 0;
+}
+
+.page-bottom {
+	opacity: 0;
+}
+
 .page7 .acceleo-main {
 	margin: 40px;
+}
+
+.page7 .gallery-page7-img1 {
+	background-image: url('../images/page7/main-module.png');
 }
 
 .page8 .acceleo-run {
 	margin: 40px;
 }
 
+.page8 .gallery-page8-img1 {
+	background-image: url('../images/page8/launch-configuration.png');
+}
+
 .page10 .acceleo-prototype {
 	margin: 40px;
 }
 
+.page10 .gallery-page10-img1 {
+	background-image: url('../images/page10/initialized-1.png');
+}
+
 .page11 .gallery-page11-img1 {
-	background-image: url('../images/page6/module.png');
+	background-image: url('../images/page11/code-completion.png');
 }
 .page11 .gallery-page11-img2 {
-	background-image: url('../images/page6/module.png');
+	background-image: url('../images/page11/error-detection.png');
 }
 .page11 .gallery-page11-img3 {
-	background-image: url('../images/page6/module.png');
+	background-image: url('../images/page11/quick-replacement-1.png');
 }
 .page11 .gallery-page11-img4 {
-	background-image: url('../images/page6/module.png');
+	background-image: url('../images/page11/as-for-if-1.png');
 }
 .page11 .gallery-page11-img5 {
-	background-image: url('../images/page6/module.png');
+	background-image: url('../images/page11/polymorphic-dispatch-1.png');
 }
 .page11 .gallery-page11-img6 {
-	background-image: url('../images/page6/module.png');
+	background-image: url('../images/page11/profiler.png');
 }
 
 .page12 .gallery-page12-img1 {
@@ -272,6 +292,10 @@ h1 {
 .page12 .gallery-page12-img3 {
 	background-image: url('../images/page6/module.png');
 }
+.page12 .gallery-page12-img4 {
+	background-image: url('../images/page6/module.png');
+}
+
 
 .page13 .acceleo-debugger-interpreter {
 	margin: 40px;

@@ -33,17 +33,13 @@ function pageTurn(direction) {
 		if (direction == 'next') {
 			//if we must go forward and we are on page 1 or 2, let's increase this, else newPage
 			if ($(".page6 .gallery").hasClass("gallery-page6-img1")) {
-				$(".page6 .gallery").removeClass("gallery-page6-img1");
-				$(".page6 .gallery").addClass("gallery-page6-img2");
+				$(".page6 .gallery").switchClass("gallery-page6-img1", "gallery-page6-img2", 0);
 				
 				$(".page6 .pagebody .gallery-description").find(".img1").hide();
 				$(".page6 .pagebody .gallery-description").find(".img2").show();
-				$(".page6 .pagebody .gallery-description").find(".img3").hide();
 			} else if ($(".page6 .gallery").hasClass("gallery-page6-img2")) {
-				$(".page6 .gallery").removeClass("gallery-page6-img2");
-				$(".page6 .gallery").addClass("gallery-page6-img3");
+				$(".page6 .gallery").switchClass("gallery-page6-img2", "gallery-page6-img3", 0);
 				
-				$(".page6 .pagebody .gallery-description").find(".img1").hide();
 				$(".page6 .pagebody .gallery-description").find(".img2").hide();
 				$(".page6 .pagebody .gallery-description").find(".img3").show();
 			} else {
@@ -52,19 +48,15 @@ function pageTurn(direction) {
 		} else {
 			//if we must go backward and we are on page 2 or 3, let's decrease this, else newPage
 			if ($(".page6 .gallery").hasClass("gallery-page6-img3")) {
-				$(".page6 .gallery").removeClass("gallery-page6-img3");
-				$(".page6 .gallery").addClass("gallery-page6-img2");
+				$(".page6 .gallery").switchClass("gallery-page6-img3", "gallery-page6-img2", 0);
 				
-				$(".page6 .pagebody .gallery-description").find(".img1").hide();
 				$(".page6 .pagebody .gallery-description").find(".img2").show();
 				$(".page6 .pagebody .gallery-description").find(".img3").hide();
 			} else if ($(".page6 .gallery").hasClass("gallery-page6-img2")) {
-				$(".page6 .gallery").removeClass("gallery-page6-img2");
-				$(".page6 .gallery").addClass("gallery-page6-img1");
+				$(".page6 .gallery").switchClass("gallery-page6-img2", "gallery-page6-img1", 0);
 				
 				$(".page6 .pagebody .gallery-description").find(".img1").show();
 				$(".page6 .pagebody .gallery-description").find(".img2").hide();
-				$(".page6 .pagebody .gallery-description").find(".img3").hide();
 			} else {
 				newPage = $('.page.selected').prev();
 			}
@@ -73,53 +65,28 @@ function pageTurn(direction) {
 		if (direction == 'next') {
 			//if we must go forward and we are on page 1, 2, 3, 4 or 5, let's increase this else newPage
 			if ($(".page11 .gallery").hasClass("gallery-page11-img1")) {
-				$(".page11 .gallery").removeClass("gallery-page11-img1");
-				$(".page11 .gallery").addClass("gallery-page11-img2");
+				$(".page11 .gallery").switchClass("gallery-page11-img1", "gallery-page11-img2", 0);
 				
 				$(".page11 .pagebody .gallery-description").find(".img1").hide();
 				$(".page11 .pagebody .gallery-description").find(".img2").show();
-				$(".page11 .pagebody .gallery-description").find(".img3").hide();
-				$(".page11 .pagebody .gallery-description").find(".img4").hide();
-				$(".page11 .pagebody .gallery-description").find(".img5").hide();
-				$(".page11 .pagebody .gallery-description").find(".img6").hide();
 			} else if ($(".page11 .gallery").hasClass("gallery-page11-img2")) {
-				$(".page11 .gallery").removeClass("gallery-page11-img2");
-				$(".page11 .gallery").addClass("gallery-page11-img3");
+				$(".page11 .gallery").switchClass("gallery-page11-img2", "gallery-page11-img3", 0);
 				
-				$(".page11 .pagebody .gallery-description").find(".img1").hide();
 				$(".page11 .pagebody .gallery-description").find(".img2").hide();
 				$(".page11 .pagebody .gallery-description").find(".img3").show();
-				$(".page11 .pagebody .gallery-description").find(".img4").hide();
-				$(".page11 .pagebody .gallery-description").find(".img5").hide();
-				$(".page11 .pagebody .gallery-description").find(".img6").hide();
 			} else if ($(".page11 .gallery").hasClass("gallery-page11-img3")) {
-				$(".page11 .gallery").removeClass("gallery-page11-img3");
-				$(".page11 .gallery").addClass("gallery-page11-img4");
+				$(".page11 .gallery").switchClass("gallery-page11-img3", "gallery-page11-img4", 0);
 				
-				$(".page11 .pagebody .gallery-description").find(".img1").hide();
-				$(".page11 .pagebody .gallery-description").find(".img2").hide();
 				$(".page11 .pagebody .gallery-description").find(".img3").hide();
 				$(".page11 .pagebody .gallery-description").find(".img4").show();
-				$(".page11 .pagebody .gallery-description").find(".img5").hide();
-				$(".page11 .pagebody .gallery-description").find(".img6").hide();
 			} else if ($(".page11 .gallery").hasClass("gallery-page11-img4")) {
-				$(".page11 .gallery").removeClass("gallery-page11-img4");
-				$(".page11 .gallery").addClass("gallery-page11-img5");
+				$(".page11 .gallery").switchClass("gallery-page11-img4", "gallery-page11-img5", 0);
 				
-				$(".page11 .pagebody .gallery-description").find(".img1").hide();
-				$(".page11 .pagebody .gallery-description").find(".img2").hide();
-				$(".page11 .pagebody .gallery-description").find(".img3").hide();
 				$(".page11 .pagebody .gallery-description").find(".img4").hide();
 				$(".page11 .pagebody .gallery-description").find(".img5").show();
-				$(".page11 .pagebody .gallery-description").find(".img6").hide();
 			} else if ($(".page11 .gallery").hasClass("gallery-page11-img5")) {
-				$(".page11 .gallery").removeClass("gallery-page11-img5");
-				$(".page11 .gallery").addClass("gallery-page11-img6");
+				$(".page11 .gallery").switchClass("gallery-page11-img5", "gallery-page11-img6", 0);
 				
-				$(".page11 .pagebody .gallery-description").find(".img1").hide();
-				$(".page11 .pagebody .gallery-description").find(".img2").hide();
-				$(".page11 .pagebody .gallery-description").find(".img3").hide();
-				$(".page11 .pagebody .gallery-description").find(".img4").hide();
 				$(".page11 .pagebody .gallery-description").find(".img5").hide();
 				$(".page11 .pagebody .gallery-description").find(".img6").show();
 			} else {
@@ -128,55 +95,30 @@ function pageTurn(direction) {
 		} else {
 			//if we must go backward and we are on page 6, 5, 4, 3 or 2, let's decrease this else newPage
 			if ($(".page11 .gallery").hasClass("gallery-page11-img6")) {
-				$(".page11 .gallery").removeClass("gallery-page11-img6");
-				$(".page11 .gallery").addClass("gallery-page11-img5");
+				$(".page11 .gallery").switchClass("gallery-page11-img6", "gallery-page11-img5", 0);
 				
-				$(".page11 .pagebody .gallery-description").find(".img1").hide();
-				$(".page11 .pagebody .gallery-description").find(".img2").hide();
-				$(".page11 .pagebody .gallery-description").find(".img3").hide();
-				$(".page11 .pagebody .gallery-description").find(".img4").hide();
 				$(".page11 .pagebody .gallery-description").find(".img5").show();
 				$(".page11 .pagebody .gallery-description").find(".img6").hide();
 			} else if ($(".page11 .gallery").hasClass("gallery-page11-img5")) {
-				$(".page11 .gallery").removeClass("gallery-page11-img5");
-				$(".page11 .gallery").addClass("gallery-page11-img4");
+				$(".page11 .gallery").switchClass("gallery-page11-img5", "gallery-page11-img4", 0);
 				
-				$(".page11 .pagebody .gallery-description").find(".img1").hide();
-				$(".page11 .pagebody .gallery-description").find(".img2").hide();
-				$(".page11 .pagebody .gallery-description").find(".img3").hide();
 				$(".page11 .pagebody .gallery-description").find(".img4").show();
 				$(".page11 .pagebody .gallery-description").find(".img5").hide();
-				$(".page11 .pagebody .gallery-description").find(".img6").hide();
 			} else if ($(".page11 .gallery").hasClass("gallery-page11-img4")) {
-				$(".page11 .gallery").removeClass("gallery-page11-img4");
-				$(".page11 .gallery").addClass("gallery-page11-img3");
+				$(".page11 .gallery").switchClass("gallery-page11-img4", "gallery-page11-img3", 0);
 				
-				$(".page11 .pagebody .gallery-description").find(".img1").hide();
-				$(".page11 .pagebody .gallery-description").find(".img2").hide();
 				$(".page11 .pagebody .gallery-description").find(".img3").show();
 				$(".page11 .pagebody .gallery-description").find(".img4").hide();
-				$(".page11 .pagebody .gallery-description").find(".img5").hide();
-				$(".page11 .pagebody .gallery-description").find(".img6").hide();
 			} else if ($(".page11 .gallery").hasClass("gallery-page11-img3")) {
-				$(".page11 .gallery").removeClass("gallery-page11-img3");
-				$(".page11 .gallery").addClass("gallery-page11-img2");
+				$(".page11 .gallery").switchClass("gallery-page11-img3", "gallery-page11-img2", 0);
 				
-				$(".page11 .pagebody .gallery-description").find(".img1").hide();
 				$(".page11 .pagebody .gallery-description").find(".img2").show();
 				$(".page11 .pagebody .gallery-description").find(".img3").hide();
-				$(".page11 .pagebody .gallery-description").find(".img4").hide();
-				$(".page11 .pagebody .gallery-description").find(".img5").hide();
-				$(".page11 .pagebody .gallery-description").find(".img6").hide();
 			} else if ($(".page11 .gallery").hasClass("gallery-page11-img2")) {
-				$(".page11 .gallery").removeClass("gallery-page11-img2");
-				$(".page11 .gallery").addClass("gallery-page11-img1");
+				$(".page11 .gallery").switchClass("gallery-page11-img2", "gallery-page11-img1", 0);
 				
 				$(".page11 .pagebody .gallery-description").find(".img1").show();
 				$(".page11 .pagebody .gallery-description").find(".img2").hide();
-				$(".page11 .pagebody .gallery-description").find(".img3").hide();
-				$(".page11 .pagebody .gallery-description").find(".img4").hide();
-				$(".page11 .pagebody .gallery-description").find(".img5").hide();
-				$(".page11 .pagebody .gallery-description").find(".img6").hide();
 			} else {
 				newPage = $('.page.selected').prev();
 			}
@@ -185,27 +127,18 @@ function pageTurn(direction) {
 		if (direction == 'next') {
 			//if we must go forward and we are on page 1, 2 or 3 let's increase this, else newPage
 			if ($(".page12 .gallery").hasClass("gallery-page12-img1")) {
-				$(".page12 .gallery").removeClass("gallery-page12-img1");
-				$(".page12 .gallery").addClass("gallery-page12-img2");
+				$(".page12 .gallery").switchClass("gallery-page12-img1", "gallery-page12-img2", 0);
 				
 				$(".page12 .pagebody .gallery-description").find(".img1").hide();
 				$(".page12 .pagebody .gallery-description").find(".img2").show();
-				$(".page12 .pagebody .gallery-description").find(".img3").hide();
-				$(".page12 .pagebody .gallery-description").find(".img4").hide();
 			} else if ($(".page12 .gallery").hasClass("gallery-page12-img2")) {
-				$(".page12 .gallery").removeClass("gallery-page12-img2");
-				$(".page12 .gallery").addClass("gallery-page12-img3");
+				$(".page12 .gallery").switchClass("gallery-page12-img2", "gallery-page12-img3", 0);
 				
-				$(".page12 .pagebody .gallery-description").find(".img1").hide();
 				$(".page12 .pagebody .gallery-description").find(".img2").hide();
 				$(".page12 .pagebody .gallery-description").find(".img3").show();
-				$(".page12 .pagebody .gallery-description").find(".img4").hide();
 			} else if ($(".page12 .gallery").hasClass("gallery-page12-img3")) {
-				$(".page12 .gallery").removeClass("gallery-page12-img3");
-				$(".page12 .gallery").addClass("gallery-page12-img4");
+				$(".page12 .gallery").switchClass("gallery-page12-img3", "gallery-page12-img4", 0);
 				
-				$(".page12 .pagebody .gallery-description").find(".img1").hide();
-				$(".page12 .pagebody .gallery-description").find(".img2").hide();
 				$(".page12 .pagebody .gallery-description").find(".img3").hide();
 				$(".page12 .pagebody .gallery-description").find(".img4").show();
 			} else {
@@ -214,29 +147,20 @@ function pageTurn(direction) {
 		} else {
 			//if we must go backward and we are on page 2, 3 or 4, let's decrease this, else newPage
 			if ($(".page12 .gallery").hasClass("gallery-page12-img4")) {
-				$(".page12 .gallery").removeClass("gallery-page12-img4");
-				$(".page12 .gallery").addClass("gallery-page12-img3");
+				$(".page12 .gallery").switchClass("gallery-page12-img4", "gallery-page12-img3", 0);
 				
-				$(".page12 .pagebody .gallery-description").find(".img1").hide();
-				$(".page12 .pagebody .gallery-description").find(".img2").hide();
 				$(".page12 .pagebody .gallery-description").find(".img3").show();
 				$(".page12 .pagebody .gallery-description").find(".img4").hide();
 			} else if ($(".page12 .gallery").hasClass("gallery-page12-img3")) {
-				$(".page12 .gallery").removeClass("gallery-page12-img3");
-				$(".page12 .gallery").addClass("gallery-page12-img2");
+				$(".page12 .gallery").switchClass("gallery-page12-img3", "gallery-page12-img2", 0);
 				
-				$(".page12 .pagebody .gallery-description").find(".img1").hide();
 				$(".page12 .pagebody .gallery-description").find(".img2").show();
 				$(".page12 .pagebody .gallery-description").find(".img3").hide();
-				$(".page12 .pagebody .gallery-description").find(".img4").hide();
 			} else if ($(".page12 .gallery").hasClass("gallery-page12-img2")) {
-				$(".page12 .gallery").removeClass("gallery-page12-img2");
-				$(".page12 .gallery").addClass("gallery-page12-img1");
+				$(".page12 .gallery").switchClass("gallery-page12-img2", "gallery-page12-img1", 0);
 				
 				$(".page12 .pagebody .gallery-description").find(".img1").show();
 				$(".page12 .pagebody .gallery-description").find(".img2").hide();
-				$(".page12 .pagebody .gallery-description").find(".img3").hide();
-				$(".page12 .pagebody .gallery-description").find(".img4").hide();
 			} else {
 				newPage = $('.page.selected').prev();
 			}
